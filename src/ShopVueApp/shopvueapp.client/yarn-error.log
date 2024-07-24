@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Python27;C:\Cassandra\apache-cassandra-4.1.3\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Users\Erfan\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Ruby33-x64\bin;C:\Users\Erfan\AppData\Local\Programs\Python\Launcher\;C:\Users\Erfan\AppData\Local\Microsoft\WindowsApps;C:\Users\Erfan\.dotnet\tools;C:\Users\Erfan\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg\bin;C:\Users\Erfan\AppData\Roaming\npm;C:\Users\Erfan\AppData\Local\Yarn\bin;C:\Users\Erfan\.dotnet\tools;C:\Python27\python.exe;C:\Users\Erfan\AppData\Local\Programs\Python\Python312\python.exe;C:\Users\Erfan\AppData\Local\Programs\Fiddler;C:\Users\Erfan\AppData\Local\MongoDBCompass\MongoDBCompass.exe;C:\Users\Erfan\AppData\Local\MongoDBCompass\app-1.43.0\MongoDBCompass.exe
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-2.2.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:632:28)
+      at ClientRequest.emit (node:events:518:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:840:9)
+      at Object.onceWrapper (node:events:632:28)
+      at TLSSocket.emit (node:events:530:35)
+      at Socket._onTimeout (node:net:589:8)
+      at listOnTimeout (node:internal/timers:573:17)
+      at process.processTimers (node:internal/timers:514:7)
+
+npm manifest: 
+  {
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "build": "nuxt build",
+      "dev": "nuxt dev",
+      "generate": "nuxt generate",
+      "preview": "nuxt preview",
+      "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+      "@nuxtjs/axios": "^5.13.6",
+      "nuxt": "^3.12.4",
+      "vue": "latest"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

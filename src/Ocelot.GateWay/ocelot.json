@@ -1,0 +1,77 @@
+{
+  "routes": [
+    //Catalog API
+    {
+      "DownstreamPathTemplate": "/Products/GetProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalog",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "AuthenticationOptions": {
+    "AuthenticationProviderKey": "Bearer"
+  },
+  "RouteClaimsRequirement": {
+    "role": "Administrator"
+  }
+}
+
+
+//{
+//  "Routes": [
+//    {
+//      "DownstreamPathTemplate": "/Products/{everything}",
+//      "DownstreamScheme": "https",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5001
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/catalog/{everything}",
+//      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+//      "AuthenticationOptions": {
+//        "AuthenticationProviderKey": "JwtBearer",
+//        "AllowedScopes": []
+//      }
+//    }
+//    //,
+//    //{
+//    //  "DownstreamPathTemplate": "api/Auth/login/{everything}",
+//    //  "DownstreamScheme": "https",
+//    //  "DownstreamHostAndPorts": [
+//    //    {
+//    //      "Host": "localhost",
+//    //      "Port": 5002
+//    //    }
+//    //  ],
+//    //  "UpstreamPathTemplate": "api/Auth/login/{everything}",
+//    //  "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+//    //},
+//    //{
+//    //  "DownstreamPathTemplate": "/api/basket/{everything}",
+//    //  "DownstreamScheme": "http",
+//    //  "DownstreamHostAndPorts": [
+//    //    {
+//    //      "Host": "localhost",
+//    //      "Port": 5003
+//    //    }
+//    //  ],
+//    //  "UpstreamPathTemplate": "/api/basket/{everything}",
+//    //  "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+//    //  "AuthenticationOptions": {
+//    //    "AuthenticationProviderKey": "JwtBearer",
+//    //    "AllowedScopes": []
+//    //  }
+//    //}
+//  ],
+//  //"GlobalConfiguration": {
+//  //  "BaseUrl": "http://localhost:5000"
+//  //}
+//}

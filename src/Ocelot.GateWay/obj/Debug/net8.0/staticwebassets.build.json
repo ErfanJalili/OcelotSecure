@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WD+Dp5ApHucizYk5bvVYhQ6127ngWAQqblVn2eqeWH0=",
+  "Source": "Ocelot.GateWay",
+  "BasePath": "_content/Ocelot.GateWay",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

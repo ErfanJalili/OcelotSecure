@@ -1,0 +1,1 @@
+export { default } from "file:///D:/MyImprove/SSO/MySSO/src/ShopVueApp/shopvueapp.client/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
